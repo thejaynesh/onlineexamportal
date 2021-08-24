@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Result</title>
+<link rel="stylesheet" href="userDashboard.css">
+</head>
+<body>
+<div class="sidebar">
+<h1 class="heading">Online<br> Examination<br> Portal<br></h1>
+<hr>
+<a href="admin-home.html" class="dashboard">&nbsp<b>Dashboard</b></a><br>
+<a href="manage-user.html">&nbsp<b>Manage Users</b></a><br>
+<a href="manage-topic.html">&nbsp<b>Manage Topics</b></a><br>
+<a href="profilePage.html">&nbsp<b>Profile</b></a><br>
+<a href="#">&nbsp<b>Logout</b></a><br>
+</div>
+<div style= "margin-left: 23%" >
+<p class="user-name" align="right">
+Hi! Avantika Saroha
+</p>
+<h1 class="page-heading" style="text-align:center">Result</h1>
+
+<div style="white-space:nowrap;">
+
+<form class="result-dropdown"><b>Topic:</b>
+  <select  class="result-drpdwnopt">
+  <option disabled selected>Select</option>
+  <option >Verbal</option>
+  <option>Qualitative Reasoning</option>
+  <option >Quantitative Reasoning</option>
+  </select>
+  
+<input class="search-button" type="button" value="Start" onclick="showpopup()">
+
+ </form> 
+ 
+
+<div class="overlay" id="overlay" style="display:none;" onclick="closepopup()"></div>
+
+
+<div class="popup" id="popup"> 
+<div class="content">
+<div class="close" onclick="closepopup()">
+<button>x</button>
+</div>
+<h1>Subject Name</h1>
+<div>
+<table class="result-table" border="1" cellpadding="18">
+<tr>
+<td>User Id</td>
+<td>User Name</td>
+<td>Totak Marks</td>
+<td>Marks Obtained</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Avantika Saroha</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Avantika Saroha</td>
+<td>10</td>
+<td>8</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+<script> 
+function showpopup(){
+	document.getElementById("popup").classList.toggle("active");
+	document.getElementById("overlay").style.display = "block";
+
+}
+function closepopup(){
+	document.getElementById("popup").classList.toggle("active");
+	document.getElementById("overlay").style.display = "none";
+
+}
+</script>
+</body>
+</html>
