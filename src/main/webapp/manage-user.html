@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manage Users</title>
+<link rel="stylesheet" href="userDashboard.css">
+</head>	
+<body>
+<div class="sidebar">
+<h1 class="heading">Online<br> Examination<br> Portal<br></h1>
+<hr>
+<a href="admin-home.html" class="dashboard">&nbsp<b>Dashboard</b></a><br>
+<a href="manage-topic.html">&nbsp<b>Manage Topics</b></a><br>
+<a href="admin-result.html">&nbsp<b>View Result</b></a><br>
+<a href="profilePage.html">&nbsp<b>Profile</b></a><br>
+<a href="#">&nbsp<b>Logout</b></a><br>
+</div>
+<div style= "margin-left: 23%" >
+<p class="user-name" align="right">
+Hi! Avantika Saroha
+</p>
+<h1 class="page-heading" style="text-align:center">Manage Users</h1>
+<input class="exam-button" type="button" value="Add User" onclick="showpopup()">
+<table border="1" style="border-collapse:collapse;width:100%;text-align:center;" cellpadding="4px">
+<tr>
+<th>S. NO.</th><th>User id</th><th>User Name</th><th>E-mail</th><th>Edit</th><th>Delete</th>
+</tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+<tr><td>1</td><td>101</td><td>Avantika Saroha</td><td>avantika@gmail.com</td><td><img src=""></td><td><img src=""></td></tr>
+
+</table>
+<div class="overlay" id="overlay" style="display:none;" onclick="closepopup()"></div>
+<div class="add-popup" id="popup"> 
+<div class="content">
+<div class="close" onclick="closepopup()">
+<button>x</button>
+</div>
+<h1>Subject Name</h1>
+<div>
+<table class="result-table" border="1" cellpadding="18">
+<tr>
+<td>User Name</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>User ID</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>E-mail</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password"></td>
+</tr>
+</table>
+<input class="exam-button" type="button" value="Add User" onclick="showpopup()">
+</div>
+</div>
+</div>
+</div>
+<script> 
+function showpopup(){
+	document.getElementById("popup").classList.toggle("active");
+	document.getElementById("overlay").style.display = "block";
+
+}
+function closepopup(){
+	document.getElementById("popup").classList.toggle("active");
+	document.getElementById("overlay").style.display = "none";
+
+}
+</script>
+</body>
+</html>
